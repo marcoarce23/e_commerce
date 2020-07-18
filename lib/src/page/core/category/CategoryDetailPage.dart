@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:impulse/src/page/core/category/Character.dart';
+import 'package:e_commerce/src/page/core/category/Character.dart';
 
 class CategoryDetailPage extends StatefulWidget {
   final Character character;

@@ -1,9 +1,9 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:impulse/src/style/Style.dart';
-import 'package:impulse/src/theme/Theme.dart';
-import 'package:impulse/src/widget/general/OpenWebWidget.dart';
+import 'package:e_commerce/src/style/Style.dart';
+import 'package:e_commerce/src/theme/Theme.dart';
+import 'package:e_commerce/src/widget/general/OpenWebWidget.dart';
 import 'package:page_transition/page_transition.dart';
 
 Widget copyRigth() {
@@ -15,7 +15,7 @@ Widget copyRigth() {
       Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Text('Impulse@2020. ', style: kTitleCursive4Style),
+          Text('e_commerce@2020. ', style: kTitleCursive4Style),
           FaIcon(
             //  FontAwesomeIcons.earlybirds,
             FontAwesomeIcons.shopify,
@@ -55,12 +55,12 @@ SizedBox sizedBox(double ancho, double alto) {
 
 Widget text(String text, Color color, int maxLines, double size) {
   return Text(text,
-  maxLines: maxLines,
+      maxLines: maxLines,
       style: TextStyle(
         color: color,
         fontSize: size,
       )
-    //  strutStyle: StrutStyle.fromTextStyle(textStyle),
+      //  strutStyle: StrutStyle.fromTextStyle(textStyle),
       );
 }
 

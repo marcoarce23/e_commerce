@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:vector_math/vector_math.dart' as vector;
-import 'package:impulse/src/model/entity/EntityMap/CardSlideProduct.dart';
+import 'package:e_commerce/src/model/entity/EntityMap/CardSlideProduct.dart';
 
 /*
 class Shoe {

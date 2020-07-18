@@ -2,14 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:getwidget/components/button/gf_button.dart';
 import 'package:getwidget/shape/gf_button_shape.dart';
-import 'package:impulse/src/page/general/ViewPage.dart';
-import 'package:impulse/src/page/intro/IntroPage.dart';
-import 'package:impulse/src/page/login/LoginClipperPage.dart';
-import 'package:impulse/src/theme/Theme.dart';
-import 'package:impulse/src/widget/general/CallWidget.dart';
-import 'package:impulse/src/widget/general/GeneralWidget.dart';
-import 'package:impulse/src/widget/general/OpenWebWidget.dart';
-import 'package:impulse/src/widget/general/SenWidget.dart';
+import 'package:e_commerce/src/page/general/ViewPage.dart';
+import 'package:e_commerce/src/page/intro/IntroPage.dart';
+import 'package:e_commerce/src/page/login/LoginClipperPage.dart';
+import 'package:e_commerce/src/theme/Theme.dart';
+import 'package:e_commerce/src/widget/general/CallWidget.dart';
+import 'package:e_commerce/src/widget/general/GeneralWidget.dart';
+import 'package:e_commerce/src/widget/general/SenWidget.dart';
 import 'package:page_transition/page_transition.dart';
 
 class LogOnPage extends StatelessWidget {
@@ -52,7 +51,7 @@ class LogOnPage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Text(
-            "Bienvenido a Impulse",
+            "Bienvenido a e_commerce",
             style: Theme.of(context)
                 .textTheme
                 .headline5
@@ -61,7 +60,7 @@ class LogOnPage extends StatelessWidget {
           _gmailButton(),
           //   _facebookButton(context),
           //_emailButton(context),
-          _button(context, 'Visita Impulse', 18.0, 20.0),
+          _button(context, 'Visita e_commerce', 18.0, 20.0),
           _twitterEvelopeButtons(context),
           sizedBox(0.0, 8.0),
           _egree(context),
@@ -114,8 +113,8 @@ class LogOnPage extends StatelessWidget {
             shape: CircleBorder(),
             onPressed: () {
               ViewPage(
-                  title: 'Facebook - Impulse',
-                  url: 'https://www.facebook.com/Impulse.Bo/');
+                  title: 'Facebook - e_commerce',
+                  url: 'https://www.facebook.com/e_commerce.Bo/');
             },
             child: Icon(
               FontAwesomeIcons.facebookF,
@@ -136,8 +135,8 @@ class LogOnPage extends StatelessWidget {
             shape: CircleBorder(),
             onPressed: () {
               ViewPage(
-                  title: 'Instagram - Impulse',
-                  url: 'https://www.instagram.com/impulse_oficial/');
+                  title: 'Instagram - e_commerce',
+                  url: 'https://www.instagram.com/e_commerce_oficial/');
             },
             child: Icon(
               FontAwesomeIcons.instagram,
@@ -158,7 +157,7 @@ class LogOnPage extends StatelessWidget {
             shape: CircleBorder(),
             onPressed: () {
               callWhatsAppText(61677470,
-                  '*Amigos Impulse:* \nSoy un cliente, me gustaría ponerme en contacto con uds. \nEnviado desde la aplicación \n*Impulse Digital*.');
+                  '*Amigos e_commerce:* \nSoy un cliente, me gustaría ponerme en contacto con uds. \nEnviado desde la aplicación \n*e_commerce Digital*.');
             },
             child: Icon(
               FontAwesomeIcons.whatsapp,
@@ -179,9 +178,9 @@ class LogOnPage extends StatelessWidget {
             shape: CircleBorder(),
             onPressed: () {
               sendEmailAdvanced(
-                  'info@impulse.bo',
+                  'info@e_commerce.bo',
                   "Impluse - Consulta para la compra de catálogo",
-                  "Amigos de Impulse: \nDeseo saber sobre las promociones y vanta de catálogos. \nFavor su colaboración. Gracias");
+                  "Amigos de e_commerce: \nDeseo saber sobre las promociones y vanta de catálogos. \nFavor su colaboración. Gracias");
             },
             child: Icon(
               FontAwesomeIcons.solidEnvelope,
@@ -211,7 +210,7 @@ class LogOnPage extends StatelessWidget {
                 alignment: Alignment.topCenter,
                 child: ViewPage(
                     title: 'Políticas de Privacidad',
-                    url: 'https://www.impulse.bo/politicas-de-privacidad'),
+                    url: 'https://www.e_commerce.bo/politicas-de-privacidad'),
               ),
             ),
           ),

@@ -1,12 +1,11 @@
-
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:impulse/src/page/home/HomePage.dart';
-import 'package:impulse/src/style/Style.dart';
+import 'package:e_commerce/src/page/home/HomePage.dart';
+import 'package:e_commerce/src/style/Style.dart';
 
-import 'package:impulse/src/theme/Theme.dart';
+import 'package:e_commerce/src/theme/Theme.dart';
 import 'package:page_transition/page_transition.dart';
 
 class IntroPage extends StatefulWidget {
@@ -18,14 +17,14 @@ class IntroPage extends StatefulWidget {
 }
 
 class _IntroPageState extends State<IntroPage> {
- //  final prefs = new PreferensUser();
+  //  final prefs = new PreferensUser();
   final int _numPages = 3;
   int _currentPage = 0;
   final PageController _pageController = PageController(initialPage: 0);
 
   @override
   void initState() {
-  //  prefs.ultimaPagina = IntroPage.routeName;
+    //  prefs.ultimaPagina = IntroPage.routeName;
     super.initState();
   }
 
@@ -114,14 +113,14 @@ class _IntroPageState extends State<IntroPage> {
                               Center(
                                 child: Image(
                                   image: AssetImage(
-                                    'assets/impulse01.jpg',
+                                    'assets/e_commerce01.jpg',
                                   ),
                                   height: 150.0,
                                   width: 150.0,
                                 ),
                               ),
                               AutoSizeText(
-                                'Impulse, es una APP social para los voluntarios.',
+                                'e_commerce, es una APP social para los voluntarios.',
                                 style: kSubtitleStyleBlack,
                                 maxLines: 2,
                                 minFontSize: 15.0,
@@ -206,7 +205,7 @@ class _IntroPageState extends State<IntroPage> {
                               Center(
                                 child: Image(
                                   image: AssetImage(
-                                    'assets/impulse02.jpg',
+                                    'assets/e_commerce02.jpg',
                                   ),
                                   height: 150.0,
                                   width: 150.0,
@@ -298,7 +297,7 @@ class _IntroPageState extends State<IntroPage> {
                                   fit: BoxFit.scaleDown,
                                   filterQuality: FilterQuality.high,
                                   image: AssetImage(
-                                    'assets/impulse03.jpg',
+                                    'assets/e_commerce03.jpg',
                                   ),
                                   height: 150.0,
                                   width: 150.0,

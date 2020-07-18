@@ -4,13 +4,13 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:image_picker/image_picker.dart';
 
-import 'package:impulse/src/bloc/Event/EventBloc.dart';
-import 'package:impulse/src/model/Preference.dart';
-import 'package:impulse/src/model/entity/EntityMap.dart';
-import 'package:impulse/src/model/entity/IEntity.dart';
-import 'package:impulse/src/provider/provider.dart';
-import 'package:impulse/src/style/Style.dart';
-import 'package:impulse/src/theme/Theme.dart';
+import 'package:e_commerce/src/bloc/Event/EventBloc.dart';
+import 'package:e_commerce/src/model/Preference.dart';
+import 'package:e_commerce/src/model/entity/EntityMap.dart';
+import 'package:e_commerce/src/model/entity/IEntity.dart';
+import 'package:e_commerce/src/provider/provider.dart';
+import 'package:e_commerce/src/style/Style.dart';
+import 'package:e_commerce/src/theme/Theme.dart';
 
 import 'package:getwidget/getwidget.dart';
 
@@ -94,15 +94,14 @@ class EventModule extends StatefulWidget {
 }
 
 class _EventModuleState extends State<EventModule> {
-
   final List<String> imageList = [
-  "https://cdn.pixabay.com/photo/2017/12/03/18/04/christmas-balls-2995437_960_720.jpg",
-  "https://cdn.pixabay.com/photo/2017/12/13/00/23/christmas-3015776_960_720.jpg",
-  "https://cdn.pixabay.com/photo/2019/12/19/10/55/christmas-market-4705877_960_720.jpg",
-  "https://cdn.pixabay.com/photo/2019/12/20/00/03/road-4707345_960_720.jpg",
-  "https://cdn.pixabay.com/photo/2019/12/22/04/18/x-mas-4711785__340.jpg",
-  "https://cdn.pixabay.com/photo/2016/11/22/07/09/spruce-1848543__340.jpg"
-];
+    "https://cdn.pixabay.com/photo/2017/12/03/18/04/christmas-balls-2995437_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2017/12/13/00/23/christmas-3015776_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2019/12/19/10/55/christmas-market-4705877_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2019/12/20/00/03/road-4707345_960_720.jpg",
+    "https://cdn.pixabay.com/photo/2019/12/22/04/18/x-mas-4711785__340.jpg",
+    "https://cdn.pixabay.com/photo/2016/11/22/07/09/spruce-1848543__340.jpg"
+  ];
 
   final formKey = GlobalKey<FormState>();
   final scaffoldKey = GlobalKey<ScaffoldState>();
@@ -154,92 +153,86 @@ class _EventModuleState extends State<EventModule> {
                 _crearDisponible(),
                 _crearBoton(),
 
-GFProgressBar(
-     percentage: 0.9,
-     width:100,
-     radius: 90,
-     backgroundColor : Colors.black26,
-     progressBarColor: GFColors.DANGER
-),
+                GFProgressBar(
+                    percentage: 0.9,
+                    width: 100,
+                    radius: 90,
+                    backgroundColor: Colors.black26,
+                    progressBarColor: GFColors.DANGER),
 
-GFProgressBar(
-     percentage: 0.8,
-     lineHeight: 20,
-     alignment: MainAxisAlignment.spaceBetween,
-     child: const Text('80%', textAlign: TextAlign.end,
-                  style: TextStyle(fontSize: 16, color: Colors.white),
-                  ),
-     leading  : Icon( Icons.sentiment_dissatisfied, color: GFColors.DANGER),
-     trailing: Icon( Icons.sentiment_satisfied, color: GFColors.SUCCESS),
-     backgroundColor: Colors.black26,
-     progressBarColor: GFColors.INFO,
-),
-
-GFProgressBar(
-    percentage: 0.5,
-    lineHeight: 20,
-    child: const Padding(
-        padding: EdgeInsets.only(right: 5),
-        child: Text('50%', textAlign: TextAlign.end,
+                GFProgressBar(
+                  percentage: 0.8,
+                  lineHeight: 20,
+                  alignment: MainAxisAlignment.spaceBetween,
+                  child: const Text(
+                    '80%',
+                    textAlign: TextAlign.end,
                     style: TextStyle(fontSize: 16, color: Colors.white),
-               ),
-        ),
-     backgroundColor: Colors.black26,
-     progressBarColor: GFColors.WARNING,
-),
+                  ),
+                  leading: Icon(Icons.sentiment_dissatisfied,
+                      color: GFColors.DANGER),
+                  trailing:
+                      Icon(Icons.sentiment_satisfied, color: GFColors.SUCCESS),
+                  backgroundColor: Colors.black26,
+                  progressBarColor: GFColors.INFO,
+                ),
 
+                GFProgressBar(
+                  percentage: 0.5,
+                  lineHeight: 20,
+                  child: const Padding(
+                    padding: EdgeInsets.only(right: 5),
+                    child: Text(
+                      '50%',
+                      textAlign: TextAlign.end,
+                      style: TextStyle(fontSize: 16, color: Colors.white),
+                    ),
+                  ),
+                  backgroundColor: Colors.black26,
+                  progressBarColor: GFColors.WARNING,
+                ),
 
+                GFCarousel(
+                  items: imageList.map(
+                    (url) {
+                      return Container(
+                        margin: EdgeInsets.all(8.0),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.all(Radius.circular(5.0)),
+                          child: Image.network(url,
+                              fit: BoxFit.cover, width: 1000.0),
+                        ),
+                      );
+                    },
+                  ).toList(),
+                  onPageChanged: (index) {
+                    setState(() {
+                      index;
+                    });
+                  },
+                ),
 
- 
- GFCarousel(
-    items: imageList.map(
-     (url) {
-     return Container(
-       margin: EdgeInsets.all(8.0),
-       child: ClipRRect(
-         borderRadius: BorderRadius.all(Radius.circular(5.0)),
-          child: Image.network(
-             url,
-             fit: BoxFit.cover,
-              width: 1000.0
-           ),
-        ),
-      );
-      },
-     ).toList(),
-    onPageChanged: (index) {
-      setState(() {
-        index;
-      });
-    },
- ),
-
-GFCard(
-    boxFit: BoxFit.cover,
-    image: Image.asset('your asset image'),
-    title: GFListTile(
-        title: Text('Card Title'),
-        icon: GFIconButton(
-            onPressed: null,
-            icon: Icon(Icons.favorite_border),
-            type: GFButtonType.transparent,
-        )
-    ),
-    content: Text("Some quick example text to build on the card"),
-    buttonBar: GFButtonBar(
-      alignment: WrapAlignment.start,
-      children: <Widget>[
-        GFButton(
-          onPressed: () {},
-          text: 'Read More',
-        ),
-     ],
-   ),
- ),
-
-
-
-
+                GFCard(
+                  boxFit: BoxFit.cover,
+                  image: Image.asset('your asset image'),
+                  title: GFListTile(
+                      title: Text('Card Title'),
+                      icon: GFIconButton(
+                        onPressed: null,
+                        icon: Icon(Icons.favorite_border),
+                        type: GFButtonType.transparent,
+                      )),
+                  content: Text("Some quick example text to build on the card"),
+                  buttonBar: GFButtonBar(
+                    alignment: WrapAlignment.start,
+                    children: <Widget>[
+                      GFButton(
+                        onPressed: () {},
+                        text: 'Read More',
+                      ),
+                    ],
+                  ),
+                ),
               ],
             ),
           ),

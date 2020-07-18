@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
-import 'package:impulse/src/model/entity/EntityMap.dart';
+import 'package:e_commerce/src/model/entity/EntityMap.dart';
 
 class CardSwiper extends StatelessWidget {
   final List<ProductModel> peliculas;
@@ -36,8 +36,8 @@ class CardSwiper extends StatelessWidget {
           );
         },
         itemCount: peliculas.length,
-         pagination: new SwiperPagination(),
-         control: new SwiperControl(),
+        pagination: new SwiperPagination(),
+        control: new SwiperControl(),
       ),
     );
   }

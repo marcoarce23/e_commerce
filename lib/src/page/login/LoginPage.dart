@@ -4,12 +4,12 @@ import 'package:getwidget/components/button/gf_button.dart';
 import 'package:getwidget/shape/gf_button_shape.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:imei_plugin/imei_plugin.dart';
-import 'package:impulse/src/model/Preference.dart';
-import 'package:impulse/src/page/general/ViewPage.dart';
-import 'package:impulse/src/page/home/HomePage.dart';
-import 'package:impulse/src/style/Style.dart';
-import 'package:impulse/src/theme/Theme.dart';
-import 'package:impulse/src/widget/general/GeneralWidget.dart';
+import 'package:e_commerce/src/model/Preference.dart';
+import 'package:e_commerce/src/page/general/ViewPage.dart';
+import 'package:e_commerce/src/page/home/HomePage.dart';
+import 'package:e_commerce/src/style/Style.dart';
+import 'package:e_commerce/src/theme/Theme.dart';
+import 'package:e_commerce/src/widget/general/GeneralWidget.dart';
 import 'package:page_transition/page_transition.dart';
 
 class LoginPage extends StatefulWidget {
@@ -200,7 +200,7 @@ class _LoginPageState extends State<LoginPage> {
                             children: <Widget>[
                               SizedBox(height: 15.0),
                               Text('Bienvenido', style: kSigTitleStyle),
-                              Text('a Impulse', style: kSigTitleStyle),
+                              Text('a e_commerce', style: kSigTitleStyle),
                               SizedBox(height: 15.0),
                               Image(
                                   image: AssetImage("assets/icon.png"),
@@ -228,7 +228,7 @@ class _LoginPageState extends State<LoginPage> {
             SizedBox(height: 15.0),
             _dividerOr(),
             _gmailButton(),
-            _button('Visita Impulse', 18.0, 20.0),
+            _button('Visita e_commerce', 18.0, 20.0),
             SizedBox(height: 10.0),
             Wrap(
               //  mainAxisAlignment: MainAxisAlignment.start,
@@ -238,7 +238,7 @@ class _LoginPageState extends State<LoginPage> {
                     Padding(
                       padding: const EdgeInsets.all(13.0),
                       child: Text(
-                        'Importante. Para disfrutar de una mejor experiencia de cliente Impulse te recomendamos ingresar con tu correo GMAIL.',
+                        'Importante. Para disfrutar de una mejor experiencia de cliente e_commerce te recomendamos ingresar con tu correo GMAIL.',
                         style: kSigssTitleStyle,
                         textAlign: TextAlign.justify,
                         softWrap: true,
@@ -283,7 +283,6 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
               ),
-              
               Text(
                 'Si cuentas con correo GMAIL',
                 style: kSigsTitleStyle,

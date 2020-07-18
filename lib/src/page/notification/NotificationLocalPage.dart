@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:impulse/src/model/Const.dart';
-import 'package:impulse/src/page/core/Shopping/ShoppingPage.dart';
-import 'package:impulse/src/widget/image/imageOval.dart';
+import 'package:e_commerce/src/model/Const.dart';
+import 'package:e_commerce/src/page/core/Shopping/ShoppingPage.dart';
+import 'package:e_commerce/src/widget/image/imageOval.dart';
 
 class NotificationLocalPage extends StatelessWidget {
   @override
@@ -17,7 +17,7 @@ class NotificationLocalPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Text(
-                    'Notificaciones IMPULSE',
+                    'Notificaciones e_commerce',
                     style: TextStyle(
                       color: Colors.grey,
                       fontSize: 22,
@@ -41,11 +41,10 @@ class NotificationLocalPage extends StatelessWidget {
                         children: <Widget>[
                           Row(
                             children: <Widget>[
-
-                             ImageOvalNetwork(
-                        imageNetworkUrl: 'https://res.cloudinary.com/propia/image/upload/v1594742564/xohvmqv9xtwhgvppqnbb.jpg',
-                        sizeImage: Size.fromWidth(70)),
-                              
+                              ImageOvalNetwork(
+                                  imageNetworkUrl:
+                                      'https://res.cloudinary.com/propia/image/upload/v1594742564/xohvmqv9xtwhgvppqnbb.jpg',
+                                  sizeImage: Size.fromWidth(70)),
                               Flexible(
                                 child: Padding(
                                   padding: const EdgeInsets.symmetric(
@@ -59,7 +58,7 @@ class NotificationLocalPage extends StatelessWidget {
                                         children: [
                                           TextSpan(
                                               text:
-                                                'Zapatillas deportivas para niños y niñas ortopédicos',//  'Nuevo Terreno en Sector 4A - Urbanización GArdenias',
+                                                  'Zapatillas deportivas para niños y niñas ortopédicos', //  'Nuevo Terreno en Sector 4A - Urbanización GArdenias',
                                               style: TextStyle(
                                                 fontWeight: FontWeight.bold,
                                               )),
@@ -129,10 +128,10 @@ class NotificationLocalPage extends StatelessWidget {
                         children: <Widget>[
                           Row(
                             children: <Widget>[
-                               ImageOvalNetwork(
-                        imageNetworkUrl: 'https://res.cloudinary.com/propia/image/upload/v1594742559/my0xpfznfp8anftntcbm.jpg',
-                        sizeImage: Size.fromWidth(70)),
-                        
+                              ImageOvalNetwork(
+                                  imageNetworkUrl:
+                                      'https://res.cloudinary.com/propia/image/upload/v1594742559/my0xpfznfp8anftntcbm.jpg',
+                                  sizeImage: Size.fromWidth(70)),
                               Flexible(
                                 child: Padding(
                                   padding: const EdgeInsets.symmetric(
@@ -146,12 +145,13 @@ class NotificationLocalPage extends StatelessWidget {
                                         children: [
                                           TextSpan(
                                               text:
-                                                  'Nueva temporada de ropa casula de invierno',//''Construcción de viviendas (Nuevo Servicio) ',
+                                                  'Nueva temporada de ropa casula de invierno', //''Construcción de viviendas (Nuevo Servicio) ',
                                               style: TextStyle(
                                                 fontWeight: FontWeight.bold,
                                               )),
                                           TextSpan(
-                                            text: 'Venta de ropa de varón',//' Construcción desde:',
+                                            text:
+                                                'Venta de ropa de varón', //' Construcción desde:',
                                           ),
                                           TextSpan(
                                             text: '\$39.99',
@@ -251,7 +251,7 @@ class NotificationLocalPage extends StatelessWidget {
                               Flexible(
                                 child: Column(children: [
                                   Text(
-                                      'Priorizar con los clientes la venta de los Servicios de  Delivery Express',//Construcción',
+                                      'Priorizar con los clientes la venta de los Servicios de  Delivery Express', //Construcción',
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold,
                                           fontSize: 13)),
@@ -278,7 +278,8 @@ class NotificationLocalPage extends StatelessWidget {
                                 child: Align(
                                     alignment: Alignment.centerRight,
                                     child: Text(
-                                      'Ingresar a la página Web IMPULSE'.toUpperCase(),
+                                      'Ingresar a la página Web e_commerce'
+                                          .toUpperCase(),
                                       style: TextStyle(
                                           color: Colors.green,
                                           fontWeight: FontWeight.bold,
@@ -332,7 +333,8 @@ class NotificationLocalPage extends StatelessWidget {
                               ),
                               Flexible(
                                 child: Column(children: [
-                                  Text('Nueva promoción de vestimenta deportiva',//Servicios Funerales',
+                                  Text(
+                                      'Nueva promoción de vestimenta deportiva', //Servicios Funerales',
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold,
                                           fontSize: 13)),
@@ -359,7 +361,8 @@ class NotificationLocalPage extends StatelessWidget {
                                 child: Align(
                                     alignment: Alignment.centerRight,
                                     child: Text(
-                                      'Ingresar a la página Web IMPULSE'.toUpperCase(),
+                                      'Ingresar a la página Web e_commerce'
+                                          .toUpperCase(),
                                       style: TextStyle(
                                           color: Colors.green,
                                           fontWeight: FontWeight.bold,

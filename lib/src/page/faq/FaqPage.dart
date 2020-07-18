@@ -3,12 +3,12 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-import 'package:impulse/src/page/home/HomePage.dart';
-import 'package:impulse/src/style/Style.dart';
-import 'package:impulse/src/theme/Theme.dart';
-import 'package:impulse/src/widget/drawer/DrawerWidget.dart';
-import 'package:impulse/src/widget/general/GeneralWidget.dart';
-import 'package:impulse/src/widget/gfWidget/GfWidget.dart';
+import 'package:e_commerce/src/page/home/HomePage.dart';
+import 'package:e_commerce/src/style/Style.dart';
+import 'package:e_commerce/src/theme/Theme.dart';
+import 'package:e_commerce/src/widget/drawer/DrawerWidget.dart';
+import 'package:e_commerce/src/widget/general/GeneralWidget.dart';
+import 'package:e_commerce/src/widget/gfWidget/GfWidget.dart';
 
 class FaqPage extends StatefulWidget {
   FaqPage({Key key}) : super(key: key);
@@ -75,14 +75,15 @@ class _FaqPageState extends State<FaqPage> {
         sizedBox(0.0, 7.0),
         //   showPicture(photo, '', 130.0),
         //divider(),
-        textSimple1(FaIcon(FontAwesomeIcons.storeAlt, color: AppTheme.themeGrey),
-            'Preguntas Frecuentes', AppTheme.themeOrange),
+        textSimple1(
+            FaIcon(FontAwesomeIcons.storeAlt, color: AppTheme.themeGrey),
+            'Preguntas Frecuentes',
+            AppTheme.themeOrange),
 
         listAcordion(),
         listAcordion2(),
         listAcordion3(),
         listAcordion4(),
-
       ],
     );
   }
@@ -90,11 +91,12 @@ class _FaqPageState extends State<FaqPage> {
   Widget listAcordion() {
     return accordion(
         '¿Cómo puedo contactarlos?',
-        'Contamos con distintos canales de atención, cualquier duda o consulta que tengas siéntete libre de preguntar mediante: \nNuestras redes sociales: Facebook Instagram \nCorreo electrónico info@impulse.bo \nNúmero de WhatsApp +591 61677470',
+        'Contamos con distintos canales de atención, cualquier duda o consulta que tengas siéntete libre de preguntar mediante: \nNuestras redes sociales: Facebook Instagram \nCorreo electrónico info@e_commerce.bo \nNúmero de WhatsApp +591 61677470',
         AppTheme.themeGrey,
         AppTheme.themeOrange);
   }
-   Widget listAcordion2() {
+
+  Widget listAcordion2() {
     return accordion(
         '¿Cuál es el horario de atención?',
         'Puedes contactarnos en cualquier momento, para recibir respuestas más inmediatas nuestro horario es el siguiente: 9:00 AM a 8 :00 PM de lunes a viernes.',
@@ -102,7 +104,7 @@ class _FaqPageState extends State<FaqPage> {
         AppTheme.themeOrange);
   }
 
-   Widget listAcordion3() {
+  Widget listAcordion3() {
     return accordion(
         '¿Este es un sitio seguro?',
         'Ten la confianza de que tu información está siendo gestionada de la manera correcta y que este sitio web tiene los certificados de seguridad SSL correspondientes.',
@@ -110,11 +112,11 @@ class _FaqPageState extends State<FaqPage> {
         AppTheme.themeOrange);
   }
 
-   Widget listAcordion4() {
+  Widget listAcordion4() {
     return accordion(
         '¿Cómo realizan el servicio de despacho?',
-        'Los despachos los realizamos habiendo confirmado la información de los pedidos y realizado el empaque y procediendo de despacho hasta las 9:00 AM en días hábiles. Para que tu producto este seguro tenemos tres métodos de entrega:\nEntrega gratuita a domicilio para las principales ciudades del país.\nEntrega mediante oficinas FedEx de todo el país (si vive en una provincia o bien lo desee así).\nEntrega mediante las tiendas Impulse.',
-       AppTheme.themeGrey,
+        'Los despachos los realizamos habiendo confirmado la información de los pedidos y realizado el empaque y procediendo de despacho hasta las 9:00 AM en días hábiles. Para que tu producto este seguro tenemos tres métodos de entrega:\nEntrega gratuita a domicilio para las principales ciudades del país.\nEntrega mediante oficinas FedEx de todo el país (si vive en una provincia o bien lo desee así).\nEntrega mediante las tiendas e_commerce.',
+        AppTheme.themeGrey,
         AppTheme.themeOrange);
   }
 }

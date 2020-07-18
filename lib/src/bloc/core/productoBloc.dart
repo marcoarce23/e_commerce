@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:impulse/src/bloc/util/validator.dart';
+import 'package:e_commerce/src/bloc/util/validator.dart';
 import 'package:rxdart/rxdart.dart';
 
 class ProductoBloc with Validators {

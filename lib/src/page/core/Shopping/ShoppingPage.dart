@@ -1,17 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:impulse/src/model/entity/EntityMap/CardSlideProduct.dart';
-import 'package:impulse/src/model/entity/EntityMap/ListCategory.dart';
-import 'package:impulse/src/widget/card/CardSlideProductWidget.dart';
-import 'package:impulse/src/widget/general/GeneralWidget.dart';
-import 'package:impulse/src/widget/gfWidget/GfWidget.dart';
-import 'package:impulse/src/widget/ranking/RankingWidget.dart';
+import 'package:e_commerce/src/model/entity/EntityMap/CardSlideProduct.dart';
+import 'package:e_commerce/src/model/entity/EntityMap/ListCategory.dart';
+import 'package:e_commerce/src/widget/card/CardSlideProductWidget.dart';
+import 'package:e_commerce/src/widget/general/GeneralWidget.dart';
+import 'package:e_commerce/src/widget/gfWidget/GfWidget.dart';
+import 'package:e_commerce/src/widget/ranking/RankingWidget.dart';
 import 'dart:ui';
-import 'package:vector_math/vector_math.dart' as vector;
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:getwidget/getwidget.dart';
 import 'package:intl/intl.dart';
-
-import 'ProductDetail.dart';
 
 class Shoe {
   final String name;

@@ -1,4 +1,4 @@
-package bo.impulse.impulse
+package bo.e_commerce.e_commerce
 
 import io.flutter.embedding.android.FlutterActivity
 

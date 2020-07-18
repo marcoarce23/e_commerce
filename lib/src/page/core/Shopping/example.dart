@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:impulse/src/widget/carousel/CarouselSimple.dart';
-import 'package:impulse/src/widget/message/AwesomeDialog.dart';
-import 'package:impulse/src/widget/message/animated_button.dart';
+import 'package:e_commerce/src/widget/message/AwesomeDialog.dart';
+import 'package:e_commerce/src/widget/message/animated_button.dart';
 
 class example extends StatefulWidget {
   example({Key key}) : super(key: key);

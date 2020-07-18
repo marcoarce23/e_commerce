@@ -1,15 +1,14 @@
 import 'dart:async';
-import 'package:impulse/src/provider/event/ApiDelete.dart';
-import 'package:impulse/src/provider/ApiUpdate.dart';
+import 'package:e_commerce/src/provider/event/ApiDelete.dart';
+import 'package:e_commerce/src/provider/ApiUpdate.dart';
 import 'package:rxdart/rxdart.dart';
 
-import 'package:impulse/src/model/entity/EntityMap.dart';
-import 'package:impulse/src/model/entity/IEntity.dart';
-import 'package:impulse/src/provider/event/ApiAdd.dart';
-import 'package:impulse/src/bloc/util/validator.dart';
+import 'package:e_commerce/src/model/entity/EntityMap.dart';
+import 'package:e_commerce/src/model/entity/IEntity.dart';
+import 'package:e_commerce/src/provider/event/ApiAdd.dart';
+import 'package:e_commerce/src/bloc/util/validator.dart';
 
 class ProductBloc with Validators {
-
   final _controller = new BehaviorSubject<List<EventModel>>();
   final _loadingController = new BehaviorSubject<bool>();
   final _apiAdd = new ApiAddEvent();

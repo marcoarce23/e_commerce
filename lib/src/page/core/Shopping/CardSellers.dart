@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:getwidget/components/button/gf_button.dart';
 import 'package:getwidget/shape/gf_button_shape.dart';
-import 'package:impulse/src/model/entity/EntityMap/SellersGroundModule.dart';
-import 'package:impulse/src/widget/general/GeneralWidget.dart';
-import 'package:impulse/src/widget/ranking/RankingWidget.dart';
+import 'package:e_commerce/src/model/entity/EntityMap/SellersGroundModule.dart';
+import 'package:e_commerce/src/widget/ranking/RankingWidget.dart';
 import 'package:intl/intl.dart';
 
 import 'ProductDetail.dart';
@@ -25,9 +24,7 @@ class _CardSellersState extends State<CardSellers> {
           buildHeader(),
           listSellersGround(),
         ],
-      ))
-      
-      ),
+      ))),
     );
   }
 

@@ -4,9 +4,6 @@ import 'package:flutter/material.dart';
 
 import 'FlareHeader.dart';
 import 'animated_button.dart';
-
-import 'package:flutter/material.dart';
-
 import 'anims.dart';
 import 'vertical_stack_header_dialog.dart';
 

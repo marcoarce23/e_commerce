@@ -1,22 +1,22 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:impulse/src/model/Const.dart';
-import 'package:impulse/src/model/Preference.dart';
-import 'package:impulse/src/page/core/album/AlbumLoadPage.dart';
-import 'package:impulse/src/page/core/album/AlbumPage.dart';
-import 'package:impulse/src/page/core/catalog/CatalogLoadPage.dart';
-import 'package:impulse/src/page/core/foldable/FoldablePage.dart';
-import 'package:impulse/src/page/core/product/LoadProductPage.dart';
-import 'package:impulse/src/page/intro/IntroPage.dart';
-import 'package:impulse/src/page/login/LogOnPage.dart';
-import 'package:impulse/src/page/login/LoginPage.dart';
-import 'package:impulse/src/page/notification/NotificationLocalPage.dart';
-import 'package:impulse/src/page/organization/OrganizationPage.dart';
-import 'package:impulse/src/page/people/ClientPage.dart';
-import 'package:impulse/src/theme/Theme.dart';
-import 'package:impulse/src/widget/general/GeneralWidget.dart';
-import 'package:impulse/src/widget/general/SharedWidget.dart';
-import 'package:impulse/src/widget/image/imageOval.dart';
+import 'package:e_commerce/src/model/Const.dart';
+import 'package:e_commerce/src/model/Preference.dart';
+import 'package:e_commerce/src/page/core/album/AlbumLoadPage.dart';
+import 'package:e_commerce/src/page/core/album/AlbumPage.dart';
+import 'package:e_commerce/src/page/core/catalog/CatalogLoadPage.dart';
+import 'package:e_commerce/src/page/core/foldable/FoldablePage.dart';
+import 'package:e_commerce/src/page/core/product/LoadProductPage.dart';
+import 'package:e_commerce/src/page/intro/IntroPage.dart';
+import 'package:e_commerce/src/page/login/LogOnPage.dart';
+import 'package:e_commerce/src/page/login/LoginPage.dart';
+import 'package:e_commerce/src/page/notification/NotificationLocalPage.dart';
+import 'package:e_commerce/src/page/organization/OrganizationPage.dart';
+import 'package:e_commerce/src/page/people/ClientPage.dart';
+import 'package:e_commerce/src/theme/Theme.dart';
+import 'package:e_commerce/src/widget/general/GeneralWidget.dart';
+import 'package:e_commerce/src/widget/general/SharedWidget.dart';
+import 'package:e_commerce/src/widget/image/imageOval.dart';
 
 class CustomListTile extends StatelessWidget {
   final IconData icon;
@@ -131,7 +131,7 @@ class DrawerMenu extends StatelessWidget {
             '    Comparte la aplicación',
             () => sharedText(
                 'Comparte la App - Terrasur',
-                '🔺*IMPULSE*🔺 \n Una aplicación de ventas por catálogo virtual.\n💬Atención *CATALOGO VIRTUAL* personalizada. \n 📲 Puede descargar la app desde: https://play.google.com/store/apps/details?id=bo.ImpulseBolivia',
+                '🔺*e_commerce*🔺 \n Una aplicación de ventas por catálogo virtual.\n💬Atención *CATALOGO VIRTUAL* personalizada. \n 📲 Puede descargar la app desde: https://play.google.com/store/apps/details?id=bo.e_commerceBolivia',
                 'text/html')),
         CustomListTile(Icons.settings, '    Configuración',
             () => navegation(context, LoginPage())),

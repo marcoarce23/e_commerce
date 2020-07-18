@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:impulse/src/widget/image/imageOval.dart';
+import 'package:e_commerce/src/widget/image/imageOval.dart';
 
 class ClientListPage extends StatelessWidget {
   @override
@@ -9,21 +9,21 @@ class ClientListPage extends StatelessWidget {
       color: Colors.grey[100],
       child: SafeArea(
         child: Container(
-          //  margin: const EdgeInsets.only(top: kToolbarHeight),
+            //  margin: const EdgeInsets.only(top: kToolbarHeight),
             padding: EdgeInsets.symmetric(horizontal: 16.0),
             child: Column(children: <Widget>[
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   // Text(
-                  //   'Mis Clientes IMPULSE',
+                  //   'Mis Clientes e_commerce',
                   //   style: TextStyle(
                   //     color: Colors.grey,
                   //     fontSize: 22,
                   //     fontWeight: FontWeight.bold,
                   //   ),
                   // ),
-               //   CloseButton()
+                  //   CloseButton()
                 ],
               ),
               Flexible(

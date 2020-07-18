@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:impulse/src/page/core/product/ProductPage.dart';
+import 'package:e_commerce/src/page/core/product/ProductPage.dart';
 
 class ProductDetailPage extends StatelessWidget {
   final Shoe shoe;

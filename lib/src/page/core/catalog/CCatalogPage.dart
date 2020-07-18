@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-//import 'package:impulse/circle_wheel_scroll_view.dart' as wheel;
-//import 'package:impulse/src/page/core/category/Character.dart';
+//import 'package:e_commerce/circle_wheel_scroll_view.dart' as wheel;
+//import 'package:e_commerce/src/page/core/category/Character.dart';
 
 class CircularListPage extends StatefulWidget {
   @override

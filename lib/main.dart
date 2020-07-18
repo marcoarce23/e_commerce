@@ -1,19 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:impulse/src/model/Preference.dart';
-import 'package:impulse/src/page/Commerce/CommercePage.dart';
-import 'package:impulse/src/page/event/EventPage.dart';
+import 'package:e_commerce/src/model/Preference.dart';
+import 'package:e_commerce/src/page/Commerce/CommercePage.dart';
+import 'package:e_commerce/src/page/event/EventPage.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:impulse/src/page/home/HomePage.dart';
-import 'package:impulse/src/page/image/ImagePanoramaPage.dart';
-import 'package:impulse/src/page/intro/SplashPage.dart';
-import 'package:impulse/src/page/login/LogOnPage.dart';
-import 'package:impulse/src/page/login/LoginPage.dart';
-import 'package:impulse/src/provider/provider.dart';
+import 'package:e_commerce/src/page/intro/SplashPage.dart';
+import 'package:e_commerce/src/page/login/LogOnPage.dart';
+import 'package:e_commerce/src/page/login/LoginPage.dart';
+import 'package:e_commerce/src/provider/provider.dart';
 
-// import 'package:impulse/src/page/core/category/CategoryPage.dart';
-// import 'package:impulse/src/page/core/foldable/FoldablePage.dart';
-//import 'package:impulse/src/page/core/foldable/FoldablePage.dart';
+// import 'package:e_commerce/src/page/core/category/CategoryPage.dart';
+// import 'package:e_commerce/src/page/core/foldable/FoldablePage.dart';
+//import 'package:e_commerce/src/page/core/foldable/FoldablePage.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -82,7 +80,7 @@ class _MyAppState extends State<MyApp> {
         //   ),
         // ],
         child: MaterialApp(
-      title: 'IMPULSE - CATALOGO VIRTUAL',
+      title: 'e_commerce - CATALOGO VIRTUAL',
       navigatorKey: navigatorKey,
       debugShowCheckedModeBanner: false,
       theme: ThemeData(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:impulse/src/theme/Theme.dart';
+import 'package:e_commerce/src/theme/Theme.dart';
 
 const String fontName = 'WorkSans';
 const Color notWhite = Color(0xFFEDF0F2);

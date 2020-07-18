@@ -1,13 +1,11 @@
-import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:getwidget/components/accordian/gf_accordian.dart';
 import 'package:getwidget/components/carousel/gf_carousel.dart';
-import 'package:impulse/src/model/entity/EntityMap/SellersGroundModule.dart';
-import 'package:impulse/src/page/core/Shopping/ShoppingPage.dart';
-import 'package:impulse/src/widget/general/GeneralWidget.dart';
-import 'package:impulse/src/widget/general/OpenWebWidget.dart';
-import 'package:impulse/src/widget/general/SharedWidget.dart';
+import 'package:e_commerce/src/model/entity/EntityMap/SellersGroundModule.dart';
+import 'package:e_commerce/src/page/core/Shopping/ShoppingPage.dart';
+import 'package:e_commerce/src/widget/general/GeneralWidget.dart';
+import 'package:e_commerce/src/widget/general/OpenWebWidget.dart';
+import 'package:e_commerce/src/widget/general/SharedWidget.dart';
 
 import 'package:intl/intl.dart';
 

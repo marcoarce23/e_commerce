@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'dart:async';
 import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:impulse/src/model/Preference.dart';
+import 'package:e_commerce/src/model/Preference.dart';
 
 class PushNotificationProvider {
   FirebaseMessaging _firebaseMessaging = FirebaseMessaging();
@@ -22,58 +22,47 @@ class PushNotificationProvider {
       //print('tokennnn: ${prefs.token}');
     });
 
-    _firebaseMessaging.configure(
-     
-      onMessage: (info) 
-      {
+    _firebaseMessaging.configure(onMessage: (info) {
       //print('======= On Message ========');
       //print(info);
-    //  info.
+      //  info.
 
       String argumento = 'no-data';
       if (Platform.isAndroid) {
-        argumento =  info['notification']['body'] ?? 'no-data'; 
+        argumento = info['notification']['body'] ?? 'no-data';
         //print('aaaaaa: ${ info['data']['ayudaPersona']}');
       } else {
         argumento = info['ayudaPersona'] ?? 'no-data-ios';
       }
 
       _mensajesStreamController.sink.add(argumento);
-    }, 
-    
-    onLaunch: (info) 
-    {
+    }, onLaunch: (info) {
       //print('======= On Launch ========');
       //print(info);
 
       String argumento = 'no-data';
 
-      if (Platform.isAndroid) 
-      {
-        argumento = info['notification']['body'] ?? 'no-data'; 
+      if (Platform.isAndroid) {
+        argumento = info['notification']['body'] ?? 'no-data';
         //print('aaaaaa: ${ info['data']['ayudaPersona']}');
-      } 
-      else {  argumento = info['ayudaPersona'] ?? 'no-data-ios'; }
-          _mensajesStreamController.sink.add(argumento);
-    }, 
-    
-    onResume: (info)
-     {
-        //print('======= On Resume ========');
-        //print(info);
-        String argumento = 'no-data';
+      } else {
+        argumento = info['ayudaPersona'] ?? 'no-data-ios';
+      }
+      _mensajesStreamController.sink.add(argumento);
+    }, onResume: (info) {
+      //print('======= On Resume ========');
+      //print(info);
+      String argumento = 'no-data';
 
-        if (Platform.isAndroid) 
-        {
-  
-           argumento =  info['notification']['body'] ?? 'no-data'; 
-         } 
-        else { argumento = info['ayudaPersona'] ?? 'no-data-ios'; }
+      if (Platform.isAndroid) {
+        argumento = info['notification']['body'] ?? 'no-data';
+      } else {
+        argumento = info['ayudaPersona'] ?? 'no-data-ios';
+      }
 
-        _mensajesStreamController.sink.add(argumento);
-    }
-  );
-}
+      _mensajesStreamController.sink.add(argumento);
+    });
+  }
 
   dispose() {
     _mensajesStreamController?.close();

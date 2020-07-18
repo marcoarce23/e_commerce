@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:impulse/src/page/home/HomePage.dart';
-import 'package:impulse/src/style/Style.dart';
-import 'package:impulse/src/theme/Theme.dart';
-import 'package:impulse/src/widget/drawer/DrawerWidget.dart';
-import 'package:impulse/src/widget/general/GeneralWidget.dart';
+import 'package:e_commerce/src/page/home/HomePage.dart';
+import 'package:e_commerce/src/style/Style.dart';
+import 'package:e_commerce/src/theme/Theme.dart';
+import 'package:e_commerce/src/widget/drawer/DrawerWidget.dart';
+import 'package:e_commerce/src/widget/general/GeneralWidget.dart';
 
 class OrganizationPage extends StatefulWidget {
   OrganizationPage({Key key}) : super(key: key);
@@ -20,40 +20,40 @@ class _OrganizationPageState extends State<OrganizationPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-       appBar: AppBar(
-        backgroundColor: Colors.white,
-        toolbarOpacity: 0.7,
-        iconTheme: IconThemeData(color: AppTheme.themeDefault, size: 12),
-        elevation: 0,
-        title: Text("CONOCE SOBRE IMPULSE", style: kTitleAppBar),
-        // actions: <Widget>[
-        //   IconButton(
-        //     icon: Icon(Icons.search),
-        //     onPressed: () {
-        //       // showSearch(context: context, delegate: DataSearchVoluntary());
-        //     },
-        //   )
-        // ],
-      ),
-      drawer: DrawerMenu(),
-       floatingActionButton: floatButton(AppTheme.themeOrange, context,
-           FaIcon(FontAwesomeIcons.home), HomePage()),
+        appBar: AppBar(
+          backgroundColor: Colors.white,
+          toolbarOpacity: 0.7,
+          iconTheme: IconThemeData(color: AppTheme.themeDefault, size: 12),
+          elevation: 0,
+          title: Text("CONOCE SOBRE e_commerce", style: kTitleAppBar),
+          // actions: <Widget>[
+          //   IconButton(
+          //     icon: Icon(Icons.search),
+          //     onPressed: () {
+          //       // showSearch(context: context, delegate: DataSearchVoluntary());
+          //     },
+          //   )
+          // ],
+        ),
+        drawer: DrawerMenu(),
+        floatingActionButton: floatButton(AppTheme.themeOrange, context,
+            FaIcon(FontAwesomeIcons.home), HomePage()),
         body: SingleChildScrollView(
-      child: Column(
-        children: <Widget>[
-          _crearImagen(context),
-          _crearTitulo(),
-          _crearAcciones(),
-          divider(),
-          _crearTexto(),
-          _crearTexto1(),
-          _crearTexto2(),
-          _crearTexto3(),
-          _crearTexto4(),
-          copyRigth()
-        ],
-      ),
-    ));
+          child: Column(
+            children: <Widget>[
+              _crearImagen(context),
+              _crearTitulo(),
+              _crearAcciones(),
+              divider(),
+              _crearTexto(),
+              _crearTexto1(),
+              _crearTexto2(),
+              _crearTexto3(),
+              _crearTexto4(),
+              copyRigth()
+            ],
+          ),
+        ));
   }
 
   Widget _crearImagen(BuildContext context) {
@@ -82,7 +82,7 @@ class _OrganizationPageState extends State<OrganizationPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Text('Impulse, lo último en moda para tí',
+                  Text('e_commerce, lo último en moda para tí',
                       style: estiloTitulo),
                   // Text('Terrasur, haciendo tus sueños realidad',
                   //     style: estiloTitulo),
@@ -103,7 +103,8 @@ class _OrganizationPageState extends State<OrganizationPage> {
       children: <Widget>[
         FaIcon(FontAwesomeIcons.phoneSquareAlt, color: Colors.grey, size: 30.0),
         FaIcon(FontAwesomeIcons.whatsappSquare, color: Colors.grey, size: 30.0),
-        FaIcon(FontAwesomeIcons.instagramSquare, color: Colors.grey, size: 30.0),
+        FaIcon(FontAwesomeIcons.instagramSquare,
+            color: Colors.grey, size: 30.0),
       ],
     );
   }
@@ -125,7 +126,7 @@ class _OrganizationPageState extends State<OrganizationPage> {
       child: Container(
         padding: EdgeInsets.symmetric(horizontal: 30.0),
         child: Text(
-          'Impulse  es una empresa de bienes raíces con mas de 20 años en el mercado nacional y lideres en venta de terrenos urbanizados. Terrasur ofrece lotes de terreno en la ciudad de La Paz (Achumani, Mallasa, Lipari, Río Abajo, El palomar y otros  ), El Alto (Viacha, Ventilla y Mazo Cruz) y Santa Cruz (Urubó). Ofrece crédito directo desde los 5, 10 y hasta 15 años plazo a sola firma.',
+          'e_commerce  es una empresa de bienes raíces con mas de 20 años en el mercado nacional y lideres en venta de terrenos urbanizados. Terrasur ofrece lotes de terreno en la ciudad de La Paz (Achumani, Mallasa, Lipari, Río Abajo, El palomar y otros  ), El Alto (Viacha, Ventilla y Mazo Cruz) y Santa Cruz (Urubó). Ofrece crédito directo desde los 5, 10 y hasta 15 años plazo a sola firma.',
           textAlign: TextAlign.justify,
         ),
       ),

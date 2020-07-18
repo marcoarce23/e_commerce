@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:impulse/src/widget/ranking/RankingWidget.dart';
+import 'package:e_commerce/src/widget/ranking/RankingWidget.dart';
 
 class HotelListData {
   String imagePath;

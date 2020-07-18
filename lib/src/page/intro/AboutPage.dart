@@ -2,12 +2,11 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:impulse/src/model/Preference.dart';
-import 'package:impulse/src/page/home/HomePage.dart';
-import 'package:impulse/src/style/Style.dart';
-import 'package:impulse/src/theme/Theme.dart';
+import 'package:e_commerce/src/model/Preference.dart';
+import 'package:e_commerce/src/page/home/HomePage.dart';
+import 'package:e_commerce/src/style/Style.dart';
+import 'package:e_commerce/src/theme/Theme.dart';
 import 'package:page_transition/page_transition.dart';
-
 
 class AboutPage extends StatefulWidget {
   static final String routeName = 'acerca';
@@ -120,7 +119,7 @@ class _AboutPageState extends State<AboutPage> {
                                 ),
                               ),
                               AutoSizeText(
-                                'IMPULSE, es una APP de venta por internet.',
+                                'e_commerce, es una APP de venta por internet.',
                                 style: kTitleStyleBlack,
                                 maxLines: 2,
                                 minFontSize: 15.0,

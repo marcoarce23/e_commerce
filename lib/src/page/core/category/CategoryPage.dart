@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:impulse/src/page/core/Shopping/CardSellers.dart';
-import 'package:impulse/src/page/core/category/CategoryDetailPage.dart';
-import 'package:impulse/src/page/core/category/Character.dart';
+import 'package:e_commerce/src/page/core/Shopping/CardSellers.dart';
+import 'package:e_commerce/src/page/core/category/CategoryDetailPage.dart';
+import 'package:e_commerce/src/page/core/category/Character.dart';
 
 class CategoyPage extends StatefulWidget {
   @override

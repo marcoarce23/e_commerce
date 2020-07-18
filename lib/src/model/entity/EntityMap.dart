@@ -1,4 +1,4 @@
-import 'package:impulse/src/model/entity/IEntity.dart';
+import 'package:e_commerce/src/model/entity/IEntity.dart';
 
 class ProductModel implements IEntityMap {
   @override
@@ -12,15 +12,13 @@ class ProductModel implements IEntityMap {
   String user;
 
   ProductModel(
-  {
-      this.states = StateEntity.None,
+      {this.states = StateEntity.None,
       this.idBrandModel = 0,
       this.brand,
       this.model,
       this.type,
       this.photo,
-      this.user
-  });
+      this.user});
 
   Map<String, dynamic> toJson() => {
         "ID_MARCA_MODELO": idBrandModel,
@@ -31,7 +29,6 @@ class ProductModel implements IEntityMap {
         "USUARIO": user,
       };
 }
-
 
 class ProductDetailModel implements IEntityMap {
   @override
@@ -45,15 +42,13 @@ class ProductDetailModel implements IEntityMap {
   String user;
 
   ProductDetailModel(
-  {
-      this.states = StateEntity.None,
+      {this.states = StateEntity.None,
       this.idBrandModel = 0,
       this.brand,
       this.model,
       this.type,
       this.photo,
-      this.user
-  });
+      this.user});
 
   Map<String, dynamic> toJson() => {
         "ID_MARCA_MODELO": idBrandModel,
@@ -77,15 +72,13 @@ class CatalogModel implements IEntityMap {
   String user;
 
   CatalogModel(
-  {
-      this.states = StateEntity.None,
+      {this.states = StateEntity.None,
       this.idBrandModel = 0,
       this.brand,
       this.model,
       this.type,
       this.photo,
-      this.user
-  });
+      this.user});
 
   Map<String, dynamic> toJson() => {
         "ID_MARCA_MODELO": idBrandModel,
@@ -96,8 +89,6 @@ class CatalogModel implements IEntityMap {
         "USUARIO": user,
       };
 }
-
-
 
 class EventModel implements IEntityMap {
   @override

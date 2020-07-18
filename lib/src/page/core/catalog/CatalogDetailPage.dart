@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:impulse/src/model/entity/EntityMap.dart';
-
+import 'package:e_commerce/src/model/entity/EntityMap.dart';
 
 class CatalogDetail extends StatelessWidget {
   @override
@@ -101,10 +100,10 @@ class CatalogDetail extends StatelessWidget {
   }
 
   Widget _crearCasting(ProductModel pelicula) {
-   // final peliProvider = new PeliculasProvider();
+    // final peliProvider = new PeliculasProvider();
 
     return FutureBuilder(
-   //   future: peliProvider.getCast(pelicula.id.toString()),
+      //   future: peliProvider.getCast(pelicula.id.toString()),
       builder: (context, AsyncSnapshot<List> snapshot) {
         if (snapshot.hasData) {
           return _crearActoresPageView(snapshot.data);

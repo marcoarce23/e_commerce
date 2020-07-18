@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:impulse/src/page/home/HomePage.dart';
+import 'package:e_commerce/src/page/home/HomePage.dart';
 import 'dart:math';
 
-import 'package:impulse/src/theme/Theme.dart';
-import 'package:impulse/src/widget/general/GeneralWidget.dart';
-import 'package:impulse/src/widget/gfWidget/GfWidget.dart';
+import 'package:e_commerce/src/theme/Theme.dart';
+import 'package:e_commerce/src/widget/general/GeneralWidget.dart';
+import 'package:e_commerce/src/widget/gfWidget/GfWidget.dart';
 
 class FoldablePage extends StatefulWidget {
   @override

@@ -1,4 +1,4 @@
-import 'package:impulse/src/model/entity/IEntity.dart';
+import 'package:e_commerce/src/model/entity/IEntity.dart';
 
 class ClasificadorModel implements IEntityJson {
   int id;

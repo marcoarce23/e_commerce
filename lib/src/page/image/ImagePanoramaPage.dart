@@ -1,12 +1,11 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:impulse/src/page/core/catalog/CatalogLoadPage.dart';
-import 'package:impulse/src/page/home/FabCircularMenuPage.dart';
-import 'package:impulse/src/page/people/EmployeePage.dart';
-import 'package:impulse/src/theme/Theme.dart';
-import 'package:impulse/src/widget/drawer/DrawerWidget.dart';
-import 'package:impulse/src/widget/general/GeneralWidget.dart';
+import 'package:e_commerce/src/page/home/FabCircularMenuPage.dart';
+import 'package:e_commerce/src/page/people/EmployeePage.dart';
+import 'package:e_commerce/src/theme/Theme.dart';
+import 'package:e_commerce/src/widget/drawer/DrawerWidget.dart';
+import 'package:e_commerce/src/widget/general/GeneralWidget.dart';
 import 'package:panorama/panorama.dart';
 import 'package:image_picker/image_picker.dart';
 
@@ -38,7 +37,7 @@ class _ImapePanoramaPageState extends State<ImapePanoramaPage> {
             ? Image.file(_imageFile)
             : Image.asset('assets/panorama.jpg'),
       ),
-drawer: DrawerMenu(),
+      drawer: DrawerMenu(),
       floatingActionButton: Builder(
         builder: (context) => FabCircularMenu(
           key: fabKey,
@@ -62,7 +61,6 @@ drawer: DrawerMenu(),
           animationDuration: const Duration(milliseconds: 800),
           animationCurve: Curves.easeInOutCirc,
           onDisplayChange: (isOpen) {
-
             _showSnackBar(
                 context, "Menu emergente ${isOpen ? "abierto" : "cerrado"}");
           },

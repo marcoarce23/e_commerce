@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'package:impulse/src/bloc/Event/EventBloc.dart';
-import 'package:impulse/src/bloc/login/LoginBloc.dart';
-import 'package:impulse/src/bloc/product/ProductBloc.dart';
+import 'package:e_commerce/src/bloc/Event/EventBloc.dart';
+import 'package:e_commerce/src/bloc/login/LoginBloc.dart';
+import 'package:e_commerce/src/bloc/product/ProductBloc.dart';
 
 class Provider extends InheritedWidget {
   final _loginBloc = new LoginBloc();

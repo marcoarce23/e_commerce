@@ -3,23 +3,22 @@ import 'dart:ui';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:impulse/src/model/Const.dart';
+import 'package:e_commerce/src/model/Const.dart';
 
-import 'package:impulse/src/model/Preference.dart';
-import 'package:impulse/src/page/core/Shopping/CardSellers.dart';
-import 'package:impulse/src/page/core/Shopping/ShoppingPage.dart';
-import 'package:impulse/src/page/core/album/AlbumPage.dart';
-import 'package:impulse/src/page/core/category/CategoryPage.dart';
-import 'package:impulse/src/page/core/foldable/FoldablePage.dart';
-import 'package:impulse/src/page/faq/FaqPage.dart';
-import 'package:impulse/src/page/general/ViewPage.dart';
-import 'package:impulse/src/page/image/ImagePanoramaPage.dart';
-import 'package:impulse/src/page/people/ClientListPage.dart';
-import 'package:impulse/src/style/Style.dart';
-import 'package:impulse/src/theme/Theme.dart';
-import 'package:impulse/src/widget/drawer/DrawerWidget.dart';
-import 'package:impulse/src/widget/general/OpenWebWidget.dart';
-import 'package:impulse/src/widget/image/ImageWidget.dart';
+import 'package:e_commerce/src/model/Preference.dart';
+import 'package:e_commerce/src/page/core/Shopping/CardSellers.dart';
+import 'package:e_commerce/src/page/core/Shopping/ShoppingPage.dart';
+import 'package:e_commerce/src/page/core/category/CategoryPage.dart';
+import 'package:e_commerce/src/page/core/foldable/FoldablePage.dart';
+import 'package:e_commerce/src/page/faq/FaqPage.dart';
+import 'package:e_commerce/src/page/general/ViewPage.dart';
+import 'package:e_commerce/src/page/image/ImagePanoramaPage.dart';
+import 'package:e_commerce/src/page/people/ClientListPage.dart';
+import 'package:e_commerce/src/style/Style.dart';
+import 'package:e_commerce/src/theme/Theme.dart';
+import 'package:e_commerce/src/widget/drawer/DrawerWidget.dart';
+import 'package:e_commerce/src/widget/general/OpenWebWidget.dart';
+import 'package:e_commerce/src/widget/image/ImageWidget.dart';
 
 class HomePage extends StatefulWidget {
   static final String routeName = 'home';
@@ -63,7 +62,7 @@ class _HomePageState extends State<HomePage> {
             elevation: 0,
             title: Row(
               children: <Widget>[
-                Text("CATALOGO - IMPULSE.", style: kTitleAppBar),
+                Text("CATALOGO - e_commerce.", style: kTitleAppBar),
                 // SizedBox(width: 10.0),
                 FaIcon(
                   FontAwesomeIcons.handshake,
@@ -94,10 +93,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 //  _crearExpedido(),
-                showPicture(
-                    photo,
-                    imgDefault,
-                    130.0),
+                showPicture(photo, imgDefault, 130.0),
                 _botonesRedondeados(),
 
                 FlatButton(

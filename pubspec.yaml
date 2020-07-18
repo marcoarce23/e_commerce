@@ -1,5 +1,5 @@
-name: impulse
-description: Proyecto de venta por catalogo - Impulse.
+name: e_commerce
+description: Proyecto de venta por catalogo - e_commerce.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.

@@ -1,10 +1,10 @@
 import 'dart:async';
-import 'package:impulse/src/provider/ApiUpdate.dart';
-import 'package:impulse/src/model/entity/EntityMap.dart';
-import 'package:impulse/src/model/entity/IEntity.dart';
-import 'package:impulse/src/provider/event/ApiAdd.dart';
-import 'package:impulse/src/bloc/util/validator.dart';
-import 'package:impulse/src/provider/event/ApiDelete.dart';
+import 'package:e_commerce/src/provider/ApiUpdate.dart';
+import 'package:e_commerce/src/model/entity/EntityMap.dart';
+import 'package:e_commerce/src/model/entity/IEntity.dart';
+import 'package:e_commerce/src/provider/event/ApiAdd.dart';
+import 'package:e_commerce/src/bloc/util/validator.dart';
+import 'package:e_commerce/src/provider/event/ApiDelete.dart';
 import 'package:rxdart/rxdart.dart';
 
 class EventBloc with Validators {
@@ -42,6 +42,7 @@ class EventBloc with Validators {
     print('DEL VALOR DE EVENT BLOC: $result');
     return result;
   }
+
 /*
   Future<Map<String, dynamic>> add(IEntityMap entity) async {
     var result;

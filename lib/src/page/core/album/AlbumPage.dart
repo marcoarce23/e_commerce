@@ -3,8 +3,8 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
-import 'package:impulse/src/page/core/album/AlbumDetailPage.dart';
-import 'package:impulse/src/page/core/album/AlbumImagePage.dart';
+import 'package:e_commerce/src/page/core/album/AlbumDetailPage.dart';
+import 'package:e_commerce/src/page/core/album/AlbumImagePage.dart';
 import 'package:vector_math/vector_math.dart' as vector;
 import 'album.dart';
 

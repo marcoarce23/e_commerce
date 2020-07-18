@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:impulse/src/page/core/album/AlbumImagePage.dart';
-
-
+import 'package:e_commerce/src/page/core/album/AlbumImagePage.dart';
 
 const _itemCounts = 20;
 
 class AlbumFlowDetailPage extends StatelessWidget {
- final String image;
+  final String image;
   final double angle;
 
   const AlbumFlowDetailPage({

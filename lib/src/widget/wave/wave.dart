@@ -1,10 +1,8 @@
-
 import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter/widgets.dart';
-import 'package:impulse/src/widget/wave/config.dart';
-
+import 'package:e_commerce/src/widget/wave/config.dart';
 
 class WaveWidget extends StatefulWidget {
   final Config config;
@@ -168,7 +166,6 @@ class Layer {
   });
 }
 
-
 class _CustomWavePainter extends CustomPainter {
   final ColorMode colorMode;
   final Color color;
@@ -236,7 +233,9 @@ class _CustomWavePainter extends CustomPainter {
       var rect = Offset.zero &
           Size(size.width, size.height - viewCenterY * heightPercentange);
       _paint.shader = LinearGradient(
-              begin: gradientBegin == null ? Alignment.bottomCenter : gradientBegin,
+              begin: gradientBegin == null
+                  ? Alignment.bottomCenter
+                  : gradientBegin,
               end: gradientEnd == null ? Alignment.topCenter : gradientEnd,
               colors: _layer.gradient)
           .createShader(rect);

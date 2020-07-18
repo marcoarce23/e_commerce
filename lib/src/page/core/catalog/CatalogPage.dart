@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:impulse/src/widget/card/CardSwiperWidget.dart';
-import 'package:impulse/src/widget/gfWidget/GfWidget.dart';
+import 'package:e_commerce/src/widget/card/CardSwiperWidget.dart';
+import 'package:e_commerce/src/widget/gfWidget/GfWidget.dart';
 
 class CatalogPage extends StatelessWidget {
   //final peliculasProvider = new PeliculasProvider();
@@ -30,24 +30,19 @@ class CatalogPage extends StatelessWidget {
         body: Container(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: <Widget>[
-              _swiperTarjetas(), 
-              _footer(context)],
+            children: <Widget>[_swiperTarjetas(), _footer(context)],
           ),
         ));
   }
 
   Widget _swiperTarjetas() {
     return FutureBuilder(
-     // future: (){},// peliculasProvider.getEnCines(),
+      // future: (){},// peliculasProvider.getEnCines(),
       builder: (BuildContext context, AsyncSnapshot<List> snapshot) {
         if (snapshot.hasData) {
           return CardSwiper(peliculas: snapshot.data);
         } else {
-          return Container(
-              height: 400.0, 
-              child: Center(child: loading())
-              );
+          return Container(height: 400.0, child: Center(child: loading()));
         }
       },
     );

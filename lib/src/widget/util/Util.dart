@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:impulse/src/theme/Theme.dart';
-//import 'package:impulse/src/style/Style.dart' as style;
+import 'package:e_commerce/src/theme/Theme.dart';
+//import 'package:e_commerce/src/style/Style.dart' as style;
 
 class GeneralWidget {
   GeneralWidget._();

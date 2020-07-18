@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:impulse/src/model/Const.dart';
-import 'package:impulse/src/page/core/Shopping/ShoppingPage.dart';
-import 'package:impulse/src/widget/image/imageOval.dart';
+import 'package:e_commerce/src/widget/image/imageOval.dart';
 
 class EmployeeListPage extends StatelessWidget {
   @override
@@ -18,7 +16,7 @@ class EmployeeListPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Text(
-                    'Vendedores IMPULSE',
+                    'Vendedores e_commerce',
                     style: TextStyle(
                       color: Colors.grey,
                       fontSize: 22,

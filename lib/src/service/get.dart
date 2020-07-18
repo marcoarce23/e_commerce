@@ -1,4 +1,4 @@
-import 'package:impulse/src/model/entity/EntityMap/SellersGroundModule.dart';
+import 'package:e_commerce/src/model/entity/EntityMap/SellersGroundModule.dart';
 
 import 'DataList.dart';
 

@@ -1,7 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:impulse/src/model/Provider/NotifyProvider.dart';
-import 'package:impulse/src/page/core/product/ProductDetailPage.dart';
+import 'package:e_commerce/src/model/Provider/NotifyProvider.dart';
+import 'package:e_commerce/src/page/core/product/ProductDetailPage.dart';
 import 'package:provider/provider.dart';
 import 'package:vector_math/vector_math.dart' as vector;
 

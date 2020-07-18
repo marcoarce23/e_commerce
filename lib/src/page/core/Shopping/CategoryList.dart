@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:impulse/src/model/entity/EntityMap/ListCategory.dart';
+import 'package:e_commerce/src/model/entity/EntityMap/ListCategory.dart';
 
 class CategoryList extends StatefulWidget {
   CategoryList({Key key}) : super(key: key);

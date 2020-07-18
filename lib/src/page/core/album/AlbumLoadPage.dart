@@ -7,23 +7,23 @@ import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:getwidget/getwidget.dart';
-import 'package:impulse/src/bloc/image/ImageUploadBloc.dart';
+import 'package:e_commerce/src/bloc/image/ImageUploadBloc.dart';
 
-import 'package:impulse/src/bloc/product/ProductBloc.dart';
-import 'package:impulse/src/model/Const.dart';
-import 'package:impulse/src/model/Preference.dart';
-import 'package:impulse/src/model/entity/EntityMap.dart';
-import 'package:impulse/src/model/entity/IEntity.dart';
-import 'package:impulse/src/page/home/HomePage.dart';
-import 'package:impulse/src/provider/provider.dart';
-import 'package:impulse/src/style/Style.dart';
-import 'package:impulse/src/theme/Theme.dart';
-import 'package:impulse/src/widget/drawer/DrawerWidget.dart';
+import 'package:e_commerce/src/bloc/product/ProductBloc.dart';
+import 'package:e_commerce/src/model/Const.dart';
+import 'package:e_commerce/src/model/Preference.dart';
+import 'package:e_commerce/src/model/entity/EntityMap.dart';
+import 'package:e_commerce/src/model/entity/IEntity.dart';
+import 'package:e_commerce/src/page/home/HomePage.dart';
+import 'package:e_commerce/src/provider/provider.dart';
+import 'package:e_commerce/src/style/Style.dart';
+import 'package:e_commerce/src/theme/Theme.dart';
+import 'package:e_commerce/src/widget/drawer/DrawerWidget.dart';
 
-import 'package:impulse/src/widget/general/GeneralWidget.dart';
-import 'package:impulse/src/widget/gfWidget/GfWidget.dart';
-import 'package:impulse/src/widget/image/ImageWidget.dart';
-import 'package:impulse/src/model/util/Validator.dart' as validator;
+import 'package:e_commerce/src/widget/general/GeneralWidget.dart';
+import 'package:e_commerce/src/widget/gfWidget/GfWidget.dart';
+import 'package:e_commerce/src/widget/image/ImageWidget.dart';
+import 'package:e_commerce/src/model/util/Validator.dart' as validator;
 
 class AlbumAllPage extends StatefulWidget {
   static final String routeName = 'productAll';
@@ -190,7 +190,8 @@ class _AlbumLoadPagePageState extends State<AlbumLoadPage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
-                 text('CARGAR ALBUM DE IMÁGENES', AppTheme.themeBlackGrey, 1, 15.0),
+                  text('CARGAR ALBUM DE IMÁGENES', AppTheme.themeBlackGrey, 1,
+                      15.0),
                   _crearIconAppImagenes(),
                   _crearIconAppCamara(),
                 ],

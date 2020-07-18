@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:getwidget/getwidget.dart';
-import 'package:impulse/src/page/intro/IntroPage.dart';
-import 'package:impulse/src/widget/general/GeneralWidget.dart';
+import 'package:e_commerce/src/page/intro/IntroPage.dart';
+import 'package:e_commerce/src/widget/general/GeneralWidget.dart';
 
 GFAccordion accordion(String title, String content,
     Color expandedTitlebackgroundColor, Color collapsedTitlebackgroundColor) {
@@ -196,7 +196,7 @@ GFDrawer drawer(BuildContext context) {
         ),
         divider(),
         ListTile(
-          title: Text('Buscar tiendas Impulse'),
+          title: Text('Buscar tiendas e_commerce'),
           onTap: () => navegation(context, IntroPage()),
         ),
         ListTile(
@@ -208,7 +208,7 @@ GFDrawer drawer(BuildContext context) {
   );
 }
 
-// CustomListTile(Icons.search, '   Buscar tiendas Impulse',
+// CustomListTile(Icons.search, '   Buscar tiendas e_commerce',
 //             () => navegation(context, IntroPage())),
 //         CustomListTile(Icons.store, '    Tiendas más valoradas',
 //             () => navegation(context, LoginPage())),
@@ -223,7 +223,7 @@ GFDrawer drawer(BuildContext context) {
 //             '    Comparte la aplicación',
 //             () => sharedText(
 //                 'Comparte la App - SomosUnoBolivia',
-//                 '🔺*IMPULSE*🔺 \n Una aplicación de ventas por catálogo virtual.\n💬Atención *CATALOGO VIRTUAL* personalizada. \n 📲 Puede descargar la app desde: https://play.google.com/store/apps/details?id=bo.ImpulseBolivia',
+//                 '🔺*e_commerce*🔺 \n Una aplicación de ventas por catálogo virtual.\n💬Atención *CATALOGO VIRTUAL* personalizada. \n 📲 Puede descargar la app desde: https://play.google.com/store/apps/details?id=bo.e_commerceBolivia',
 //                 'text/html')),
 //         CustomListTile(Icons.settings, '    Configuración',
 //             () => navegation(context, LoginPage())),

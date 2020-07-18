@@ -1,8 +1,8 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:impulse/src/page/core/shop/ShoeDetailPage.dart';
-import 'package:impulse/src/widget/general/GeneralWidget.dart';
+import 'package:e_commerce/src/page/core/shop/ShoeDetailPage.dart';
+import 'package:e_commerce/src/widget/general/GeneralWidget.dart';
 import 'package:vector_math/vector_math.dart' as vector;
 
 const bottomBackgroundColor = Color(0xFFF1F2F7);
@@ -74,7 +74,7 @@ class _ShoePageState extends State<ShoePage> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                'IMPULSE',
+                'e_commerce',
                 textAlign: TextAlign.start,
                 style: TextStyle(
                   fontWeight: FontWeight.w700,
@@ -161,7 +161,7 @@ class _ShoePageState extends State<ShoePage> {
                       "\$${shoe.price}",
                       style: TextStyle(fontSize: 11),
                     ),
-                   sizedBox(0.0, 8.0),
+                    sizedBox(0.0, 8.0),
                   ],
                 ),
               ),
@@ -438,7 +438,7 @@ class _ShoePageState extends State<ShoePage> {
                                                 )
                                               ],
                                             ),
-                                           sizedBox(0.0, 10.0),
+                                            sizedBox(0.0, 10.0),
                                             Text(
                                               "\$${shoes[index].price}",
                                               style: TextStyle(
